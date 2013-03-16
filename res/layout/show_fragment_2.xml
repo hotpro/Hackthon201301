@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="200dip"
+        android:layout_height="200dip"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/btn_circle_disable" />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="200dip"
+        android:layout_height="200dip"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/btn_circle_disable" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/slidebar_background" >
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progressDrawable="@drawable/tranparent"
+            android:thumb="@drawable/seek_thumb_img" />
+
+        <TextView
+            android:id="@+id/text_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="80dip"
+            android:text="请滑动" />
+    </FrameLayout>
+
+</LinearLayout>
